@@ -47,22 +47,32 @@ header {
 .header__heading {
     font-size: 2rem;
 }
-.header__list {
+.navbar {
+
+}
+.navbar__list {
     display: flex;
-    gap: 2rem;
+    gap: 8rem;
     list-style-type: none;
 }
-.header__list a {
+.navbar__list a {
     text-decoration: none;
 }
-.header__item {
+.navbar__item {
     color: black;
     font-size: 2rem;
+    text-transform: uppercase;
 }
 .header__contactUs {
     position: absolute;
     right: 5rem;
     /* margin-left: auto; */
+}
+.header__button {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: none;
 }
 /* end of header */
 /* start of main */
