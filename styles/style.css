@@ -1,3 +1,4 @@
+/* css boilerplate */
 *,
 *::before,
 *::after {
@@ -20,4 +21,57 @@ body {
     font-family: unset;
     line-height: 1.6;
 }
+/* end of css boilerplate */
+/* start of header */
+header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    padding: 4rem 5rem;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 5rem;
+    /* margin-right: auto; */
+}
+.header__img {
+    width: 10rem;
+}
+.header__heading {
+    font-size: 2rem;
+}
+.header__list {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+}
+.header__list a {
+    text-decoration: none;
+}
+.header__item {
+    color: black;
+    font-size: 2rem;
+}
+.header__contactUs {
+    position: absolute;
+    right: 5rem;
+    /* margin-left: auto; */
+}
+/* end of header */
+/* start of main */
+main {
 
+}
+/* end of main */
+/* start of footer */
+footer {
+
+}
+/* end of footer */
