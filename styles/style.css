@@ -92,7 +92,20 @@ header {
     width: 100%;
 }
 .navbar__dropdown {
+    width: 20rem;
     position: absolute;
+    left: -50%;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: lightblue;
+    list-style: none;
+}
+.navbar__dropdown li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header__contactUs {
     position: absolute;
