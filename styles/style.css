@@ -99,13 +99,16 @@ header {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    background-color: lightblue;
+    background-color: rgba(0, 0, 0, .3);
     list-style: none;
 }
 .navbar__dropdown li {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.navbar__dropdown li:hover {
+    color: white;
 }
 .header__contactUs {
     position: absolute;
