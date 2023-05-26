@@ -189,6 +189,7 @@ main {
     padding-right: 35%;
 }
 .hero > * {
+    margin-top: var(--margin-small);
     margin-bottom: var(--margin-small);    
 }
 .hero__paragraph {
@@ -223,7 +224,25 @@ main {
     translate: 0 -.5rem;
 }
 .hero__icon-container {
-    
+    display: flex;
+    gap: 1rem;
+}
+.hero__icon--one img {
+    height: 5.5rem;
+}
+.hero__icon--two {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.hero__icon--two > div {
+    display: flex;
+}
+.hero__icon--two > div > img {
+    width: 2rem;
+}
+.hero__icon--two > div:last-child {
+    font-size: var(--paragraph-small);
 }
 
 .product {
