@@ -1,3 +1,15 @@
+/* variales */
+:root {
+    --color-primary: #FBAE3C;
+    --color-secondary: unset;
+    --paragraph-big: 2.35rem;
+    --paragraph-small: 1.6rem;
+    --heading-1: 7.2rem;
+    --margin-small: 1.6rem;
+}
+/* fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@900&display=swap');
+
 /* css boilerplate */
 *,
 *::before,
@@ -56,6 +68,7 @@ header {
 .header__heading {
     font-size: 2rem;
 }
+
 .navbar {
     display: block;
 }
@@ -157,7 +170,9 @@ header {
 /* start of main */
 main {
 }
+
 .landing-page__hero {
+    /* hero section */
     width: 100%;
     height: 100vh;
     background-image: url(/svg/blob-scene-haikei.svg);
@@ -167,11 +182,53 @@ main {
     justify-content: center;
     align-items: center;
 }
-
 .hero {
-    width: 80%;
+    width: 85%;
     height: auto;
     color: white;
+    padding-right: 35%;
+}
+.hero > * {
+    margin-bottom: var(--margin-small);    
+}
+.hero__paragraph {
+    font-size: var(--paragraph-big);  
+
+}
+.hero__paragraph--1 {
+    color: #FBAE3C;
+    text-transform: uppercase;
+}
+.hero__heading {
+    color: white;
+    font-size: var(--heading-1);
+    font-weight: 900;
+    font-family: 'Montserrat Alternates', sans-serif;
+    line-height: 1;
+
+}
+.hero__button {
+    display: inline-block;
+    padding: 2rem 4rem;
+    background-color: white;
+    font-size: var(--paragraph-big);
+    font-weight: 900;
+    text-decoration: none;
+    color: black;
+    border-radius: 1rem;
+    transition: background-color .1s, translate .1s;
+}
+.hero__button:hover {
+    background-color: var(--color-primary);
+    translate: 0 -.5rem;
+}
+.hero__icon-container {
+    
+}
+
+.product {
+    width: 100%;
+    height: 110vh;
 }
 
 /* end of main */
