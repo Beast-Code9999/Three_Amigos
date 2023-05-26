@@ -41,10 +41,11 @@ header {
     position: fixed;
     padding: 4rem 6rem;
     /* background-color: rgb(29, 29, 29); */
-    border-bottom: 3px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color .5s ease;
+    z-index: 1000;
 }
 
 .header__logo {
@@ -178,9 +179,11 @@ main {
     background-image: url(/svg/blob-scene-haikei.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .hero {
     width: 85%;
@@ -243,6 +246,31 @@ main {
 }
 .hero__icon--two > div:last-child {
     font-size: var(--paragraph-small);
+}
+
+.spacer-container {
+    width: 100%;
+    height: 30rem;
+    position: absolute;
+    bottom: -30rem;
+}
+.spacer {
+    width: 100%;
+    height: unset;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.spacer--one {
+    background-image: url(/svg/index/layered-waves-haikei.svg);
+    height: 20rem;
+    top: -30%;
+}
+.spacer--two {
+    background-image: url(/svg/index/layered-waves-haikei-white.svg);
+    height: 20rem;
+    bottom: 10%;
 }
 
 .product {
