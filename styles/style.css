@@ -6,6 +6,7 @@
     --paragraph-small: 1.6rem;
     --heading-1: 7.2rem;
     --margin-small: 1.6rem;
+    --section-margin-bottom: 35rem;
 }
 /* fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@900&display=swap');
@@ -173,7 +174,7 @@ main {
 }
 
 .landing-page__hero {
-    /* hero section */
+    /* start of hero section */
     width: 100%;
     height: 100vh;
     background-image: url(/svg/blob-scene-haikei.svg);
@@ -184,6 +185,7 @@ main {
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-bottom: var(--section-margin-bottom);
 }
 .hero {
     width: 85%;
@@ -246,6 +248,7 @@ main {
 }
 .hero__icon--two > div:last-child {
     font-size: var(--paragraph-small);
+    /* end of hero section */
 }
 
 .spacer-container {
@@ -274,8 +277,21 @@ main {
 }
 
 .product {
+    /* start of product section */
     width: 100%;
     height: 110vh;
+    position: relative;
+}
+.product__header {
+
+}
+
+.product__options {
+
+}
+
+.product__footer {
+    
 }
 
 /* end of main */
