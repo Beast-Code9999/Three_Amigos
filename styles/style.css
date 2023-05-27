@@ -1,6 +1,6 @@
 /* variales */
 :root {
-    --color-primary: #FBAE3C;
+    --color-primary: #fbaf3c;
     --color-secondary: #001220;
     --paragraph-small: 1.8rem;
     --paragraph-big: 2.35rem;
@@ -313,6 +313,9 @@ main {
     display: flex;
     flex-direction: column;
     padding: 3rem 15rem 3rem 3rem;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 1s, transform 1s;
 }
 .product__heading-2 {
     font-size: var(--heading-2);
@@ -329,24 +332,54 @@ main {
     line-height: 1.6;
 }
 .product__item {
-
+    display: flex;
+    gap: 1rem;
+    font-size: var(--paragraph-small);
+}
+.product__item img {
+    width: 3.2rem;
+    filter: invert(72%) sepia(48%) saturate(612%) hue-rotate(82deg) brightness(92%) contrast(80%);
+}
+.product__item--1:nth-child(3) img,
+.product__item--1:nth-child(4) img,
+.product__item--1:nth-child(5) img {
+    filter: invert(39%) sepia(32%) saturate(1202%) hue-rotate(313deg) brightness(95%) contrast(100%);
+}
+.product__item--1:nth-child(3),
+.product__item--1:nth-child(4),
+.product__item--1:nth-child(5) {
+    color: #a8a8a8;
 }
 
-/* .product__option--2 {
-    width: 48%;
-    height: 60rem;
-    border: 2px solid black;
-    box-shadow: 1rem 1rem var(--color-primary);
-} */
+.product__spiral {
+    position: absolute;
+    top: -40%;
+    right: -40%;
+    width: 45rem;
+    transition: transform 1s, filter 1s;
+    filter: invert(82%) sepia(23%) saturate(2742%) hue-rotate(330deg) brightness(104%) contrast(97%);
+}
 
+.product__option:hover .product__spiral {
+    transform: rotateZ(-30deg);
+    filter: invert(72%) sepia(48%) saturate(612%) hue-rotate(82deg) brightness(92%) contrast(80%);
+}
 
+.product__option:hover {
+    box-shadow: 2rem 2rem #47cf73;
+    transform: translate(-1rem, -1rem);
+    cursor: pointer;
+}
 .product__footer {
-
-}
-.spiral {
-    filter: invert(64%) sepia(71%) saturate(411%) hue-rotate(354deg) brightness(97%) contrast(102%);
+    
 }
 
+.spacer--three {
+    background-image: url(/svg/index/spacer-product-4.svg);
+    height: 30rem;
+    bottom: 0;
+    left: 0;
+}
 
 .achievement {
     width: 100%;
