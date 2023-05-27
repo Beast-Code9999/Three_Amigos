@@ -4,9 +4,167 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../styles/about.css">
+    <link rel="shortcut icon" href="../img/LOGO.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="../script.js" defer></script>
+    <title>About us</title>
 </head>
 <body>
-    
+    <header class="header" id="header">
+        <div class="header__logo">
+            <a href="/index.html">
+                <img class="header__img" src="../img/LOGO.png" alt="logo-svg">
+                <h2 class="header__heading">Three Amigos</h2>
+            </a>
+        </div>
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li class="navbar__item navbar__item--main"> 
+                    main dish
+                    <ul class="navbar__dropdown navbar__dropdown--main">
+                        <a href="../html/Pepperoni Pizza.html">
+                            <li>Main dish 1</li>
+                        </a>
+                        <a href="../html/Miso Ramen.html">
+                            <li>Main dish 2</li>
+                        </a>
+                    </ul>
+                </li>
+                <li class="navbar__item navbar__item--dessert">
+                    dessert
+                    <ul class="navbar__dropdown navbar__dropdown--dessert">
+                        <a href="../html/CHOCO CAKE.html">
+                            <li>desert dish 1</li>
+                        </a>
+                        <a href="../html/DONUT.html">
+                            <li>desert dish 2</li>
+                        </a>
+                    </ul>
+                </li>
+                <a href="#">
+                    <li class="navbar__item">
+                        about us
+                    </li>
+                </a>
+            </ul>
+        </nav>
+        <div class="header__signUp">
+            <a href="../html/signUp.html">
+                <button class="header__button">
+                    <!-- type submit -->
+                    Sign up
+                </button>
+            </a>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="section section--one">
+            <h1 class="section__heading-1">
+                About <span>Three Amigos</span>
+            </h1>
+            <p class="section__paragraph--1">
+                Three Amigos is a community of passionate chef's and soon to become chef's to learn, share, and create amazing recipes. We have been around since 1978 and our community have been growing steadily ever since.
+            </p>
+        </section>
+        <section class="section section--two">
+            <div class="recipes">
+                <h2 class="recipes__heading">Our free recipes</h2>
+                <div class="recipes__container">
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </section>
+        <section class="section section--three">
+            <!-- background -->
+        </section>
+        <section class="section section--four"></section>
+            <!-- location -->
+        <section class="more">
+            <div class="more__container">
+                <div class="more__div">
+                    <h1 class="more__heading">Have any questions?</h1>
+                    <p class="more__paragraph">We would love to hear from you! If you have any quesstions, comments or recipes to share please do let us know.</p>
+                </div>
+                <form class="more__form" action="#" method="get">
+                    <div>
+                        <input  type="text"
+                                class="input"  
+                                placeholder="Full Name*" 
+                                id="username"
+                                name="full-name" 
+                                required="required"
+                                minlength="4">
+                    </div>
+                    <div>
+                        <input  type="email"
+                                class="input" 
+                                id="email"
+                                name="email"
+                                placeholder="Email*"
+                                required="required">
+                    </div>
+                    <div>
+                        <textarea class="textarea " placeholder="Comment*" name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <p>By submitting this form you agree for Three Amigos to contact you and use your comment</p>
+                    <button>Submit</button>
+                </form>
+            </div>
+            <img class="more__spiral" src="../svg/index/spiral-decoration.svg" alt="spiral-svg">
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container u-margin-bottom-medium">
+            <div class="footer__social-media">
+                <div class="footer__logo">
+                    <div class="logo-box">
+                        <img class="logo-box__img" src="../img/LOGO.png" alt="Three-amigos-logo">
+                        <h3 class="logo-box__header">Three Amigos</h3>
+                    </div>
+                </div>
+                <h3 class="u-margin-bottom-small">High quality cooking education created by Three Amigosgi and its community</h3>
+                <div class="footer__imgs">
+                    <a href="#"><img src="../svg/index/icons8-github.svg" alt="github"></a>
+                    <a href="#"><img src="../svg/index/icons8-discord-new.svg" alt="discord"></a>
+                    <a href="#"><img src="../svg/index/icons8-facebook.svg" alt="facebook"></a>
+                    <a href="#"><img src="../svg/index/icons8-twitter.svg" alt="twitter"></a>
+                    
+                </div>
+            </div>
+            <div class="footer__start-learning">
+                <h2 class="u-margin-bottom-small">Start your joyrney for free</h2>
+                <form action="#" method="">
+                    <div class="input" id="footer__input">
+                        <input type="email" id="email-footer" name="email-footer" placeholder="Email Address">
+                        <label for="email-footer">
+                            <button class="btn--special">Get started!</button>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer__info">
+            <a class="footer__info__link" href="#">About</a>
+            <a class="footer__info__link" href="#">FAQ</a>
+            <a class="footer__info__link" href="#">Blog</a>
+            <a class="footer__info__link" href="#">Success Stories</a>
+            <a class="footer__info__link" href="#">Contribute</a>
+            <a class="footer__info__link" href="#">Appendix</a>
+            <a class="footer__info__link" href="#">Terms of Use</a>
+        </div>
+    </footer> 
 </body>
 </html>
