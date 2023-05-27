@@ -542,6 +542,12 @@ header {
     object-fit: cover;
     margin-bottom: var(--margin-small);
     border-radius: 1rem;
+    transition: filter .1s;
+}
+.motivation-box__img:hover {
+    cursor: pointer;
+    filter: brightness(.9) blur(3px);
+
 }
 .motivation-box__paragraph {
     font-size: var(--paragraph-huge);
@@ -566,26 +572,61 @@ header {
     overflow: hidden;
 }
 .more__container {
-    display: flex;
-    height: 100%;
     width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 9rem;
 }
 .more__div {
-    display: flex;
-    width: 50%;
+    width: 60%;
     height: 100%;
-    border: 3px solid red;
+    display: flex;
+    flex-direction: column;
+    padding-right: 2rem;
 }
 .more__heading {
-    
+    font-size: var(--heading-1);
+    color: white;
+    font-weight: 400;
 }
 .more__paragraph {
-
+    color: white;
+    font-size: var(--paragraph-small);
 }
 .more__form {
-    width: 50%;
+    width: 40%;
     height: 100%;
-    border: 3px solid blue;
+}
+.input {
+    width: 100%;
+    padding: 2rem;
+    font-size: var(--paragraph-small);
+    margin-bottom: var(--margin-small);
+    color: #464646;
+}
+.textarea {
+    width: 100%;
+    padding: 2rem;
+    font-size: var(--paragraph-small);
+    color: #464646;
+    margin-bottom: var(--margin-small);
+}  
+.more__form > p {
+    font-size: var(--paragraph-small);
+    color: white;
+    margin-bottom: var(--margin-small);
+}
+.more__form > button {
+    font-size: var(--paragraph-small);
+    padding: 2rem 4rem;
+    font-weight: 900;
+    background-color: var(--color-primary);
+    border: none;
+    transition: background-color .5s;
+}
+.more__form > button:hover {
+    cursor: pointer;
+    background-color: white;
 }
 .more__spiral {
     width: 50%;
@@ -593,10 +634,12 @@ header {
     position: absolute;
     bottom: -50%;
     left: -10%;
+    /* end of more section */
 }
 
-/* extra margin css */
+
 .u-center-text {
+    /* extra margin css */
     text-align: center;
 }
 
@@ -622,7 +665,6 @@ footer {
 .footer {
     background-color: var(--color-secondary);
     color: white;
-    /* background-color: white; */
     height: 60vh;
     display: flex;
     flex-direction: column;
@@ -630,6 +672,7 @@ footer {
     font-family: 'Montserrat Alternates', sans-serif;
 
 }
+
 .logo-box {
     display: flex;
     justify-content: center;
