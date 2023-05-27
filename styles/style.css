@@ -526,7 +526,22 @@ main {
 .motivation__paragraph {
     font-size: var(--paragraph-huge);
 }
+.motivation__container > div:nth-child(2) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.motivation-box {
+    width: 30%;
+}
+.motivation-box__img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+.motivation-box__paragraph {
 
+}
 
 
 .spacer--four {
