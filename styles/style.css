@@ -11,6 +11,7 @@
     --margin-small: 1.6rem;
     --margin-medium: 2.6rem;
     --margin-large: 5rem;
+    --padding-section: 11rem;
     --section-margin-bottom: 35rem;
 }
 /* fonts import */
@@ -417,25 +418,69 @@ main {
     left: 0;
 }
 
-.achievement {
+.offer {
     /* start of achievement section */
     width: 100%;
     height: 100vh;
     background-color: var(--color-secondary);
+    padding-top: var(--padding-section);
+    padding-bottom: var(--padding-section);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.offer > div {
+    height: auto;
+    display: flex;
+    justify-content: center;
 }
 
-.reviews {
+.offer__container {
+    height: auto;
+    width: 45%;
+    background-color: rgb(0, 54, 54);
+}
+.offer__container > * {
+    margin-bottom: var(--margin-small);
+}
+
+.offer__container--one {
+    
+}
+
+.offer__heading {
+
+}
+.offer__paragraph {
+    font-size: var(--paragraph-small);
+}
+.offer__emphasis {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.offer__emphasis > * {
+    width: 15rem;
+    height: 15rem;
+    background-color: red;
+}
+.offer__container--two {
+
+}
+
+.blog {
     width: 100%;
     height: 100vh;
+    background-color: white;
+    
 }
 
 .more {
     width: 100%;
     height: 100vh;
-    background-color: var(--color-secondary);
-
+    background-color: var(--color-secondary);    
 }
-
 
 /* end of main */
 /* start of footer */
