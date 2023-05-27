@@ -476,6 +476,25 @@ main {
     height: 95%;
     box-shadow: 2rem 2rem var(--color-primary);
 }
+.box {
+    padding: 3rem;
+}
+.box__header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--heading-2);
+    font-weight: 900;
+    color: black;
+}
+.box__paragraph {
+    width: 100%;
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+}
 
 .blog {
     width: 100%;
