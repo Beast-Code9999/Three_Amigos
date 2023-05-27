@@ -157,13 +157,13 @@ header {
     color: rgb(29, 29, 29);
 }
 
-.header__contactUs {
-    /* header contact us container */
+.header__signUp {
+    /* header sign up container */
     position: absolute;
     right: 5%;
 }
 .header__button {
-    /* header contact us button */
+    /* header sign up button */
     background-color: var(--color-primary);
     font-size: 2rem;
     padding: 1rem 2rem;
@@ -177,8 +177,6 @@ header {
 }
 /* end of header */
 /* start of main */
-main {
-}
 
 .landing-page__hero {
     /* start of hero section */
@@ -566,7 +564,20 @@ main {
     background-color: var(--color-secondary); 
     position: relative;   
     overflow: hidden;
+}
+.more__container {
 
+}
+.more__div {
+
+}
+.more__heading {
+
+}
+.more__paragraph {
+    
+}
+.more__form {
 
 }
 .more__spiral {
@@ -576,7 +587,8 @@ main {
     bottom: -50%;
     left: -10%;
 }
-/* margin css */
+
+/* extra margin css */
 .u-center-text {
     text-align: center;
 }
