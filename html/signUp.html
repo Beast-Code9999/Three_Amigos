@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../styles/signUp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header__logo">
+            <a href="/index.html">
+                <img class="header__img" src="../img/LOGO.png" alt="logo-svg">
+                <h2 class="header__heading">Three Amigos</h2>
+            </a>
+        </div>
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li class="navbar__item navbar__item--main"> 
+                    main dish
+                    <ul class="navbar__dropdown navbar__dropdown--main">
+                        <li>Main dish 1</li>
+                        <li>Main dish 2</li>
+                        <li>Main dish 3</li>
+                    </ul>
+                </li>
+                <li class="navbar__item navbar__item--dessert">
+                    dessert
+                    <ul class="navbar__dropdown navbar__dropdown--dessert">
+                        <li>desert dish 1</li>
+                        <li>desert dish 2</li>
+                        <li>desert dish 3</li>
+                    </ul>
+                </li>
+                <a href="#">
+                    <li class="navbar__item">
+                        about us
+                    </li>
+                </a>
+            </ul>
+        </nav>
+        <div class="header__signUp">
+            <button class="header__button">
+                <!-- type submit -->
+                Sign up 
+            </button>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="section-main">
+            <span>
+                <h2 class="heading-secondary u-center-text u-margin-bottom-medium">Sign-Up for Free</h2>
+            </span>
+            <div class="section-main__container">
+                <div class="section-main__form">
+                    <form action="#" method="get" class="form u-margin-bottom-small" id="form-main">
+                        <div class="form__section" id="username-container">
+                            <label for="username"  class="form__label">
+                                <img src="./img/icons8-user-96.png" alt="icon-user">
+                            </label>
+                            <input type="text"
+                                   id="username"
+                                   name="full-name" 
+                                   placeholder="Username*"
+                                   required="required"
+                                   minlength="4"
+                                   class="form__input">
+                        </div>
+                        <div class="form__section" id="email-container">
+                            <label for="email" class="form__label">
+                                <img src="./img/icons8-mail-96.png" alt="icon-mail">
+                            </label>
+                            <input type="email"
+                                   id="email"
+                                   name="email"
+                                   placeholder="Email*"
+                                   required="required"
+                                   class="form__input">
+                        </div>
+                        <div class="form__section" id="number-container">
+                            <label for="phone-number"  class="form__label">
+                                <img src="./img/icons8-phone-96.png" alt="icon-phone">
+                            </label>
+                            <input type="tel" 
+                                   id="phone-number"
+                                   name="phone-umber"
+                                   placeholder="Phone Number (optional)"
+                                   pattern="^[+]?(\d{1,2})?[\s.-]?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"
+                                   class="form__input">
+                        </div>
+                        <div class="form__section" id="password-container">
+                            <label for="user_password" class="form__label">
+                                <img src="./img/icons8-lock-96.png" alt="icon-lock">
+                            </label>
+                            <input type="password"
+                                   id="user_password"
+                                   name="user[password]"
+                                   placeholder="Password*"
+                                   required="required"
+                                   minlength="6"
+                                   class="form__input">
+                        </div>
+                        <div class="form__section" id="password_confirmation-container">
+                            <label for="user_password_confirmation"    class="form__label">
+                                <img src="./img/icons8-lock-96.png" alt="icon-lock">
+                            </label>
+                            <input type="password"
+                                   id="user_password_confirmation"
+                                   name="user[password_confirmation]"
+                                   placeholder="Password Confirmation*"
+                                   required="required"
+                                   class="form__input"
+                                   autocomplete="off">
+                        </div>
+                        
+                        <div class="form__section">
+                            <a class="form__link" href="#" target="_blank">By signing up, you agree to our terms of use.</a>
+                        </div>
+                        <input type="submit"
+                               id="submit"
+                               name="commit"
+                               value="sign-up"
+                               class="sign-up-option sign-up-option--main">
+                               
+                    </form>
+                    <div class="form-divider u-center-text u-margin-bottom-small">
+                        <span class="form-divider__text">OR SIGN UP WITH</span>
+                    </div>
+                    <form action="">
+                        <button class="sign-up-option sign-up-option--github">Github</button>
+                        <input type="hidden" value="github_sign-up">
+                    </form>
+                    <form action="">
+                        <button class="sign-up-option sign-up-option--google">Google</button>
+                        <input type="hidden" value="Google_sign-up">
+                    </form>
+                </div>
+                <div class="section-main__img">
+                    <span class="heading-primary--main">BEAST CODE ACADEMY</span>
+                    <span class="heading-primary--main">LEARN HOW TO CODE FOR FREE.</span>
+                    <span class="heading-primary--sub">This is not a real sign up page, and this is a dummy text Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nulla, optio ex, fuga, eaque autem ab tempore laborum modi id saepe natus ipsa repellendus voluptate quasi amet illo magnam tempora. Omnis alias quam illum repudiandae laboriosam reiciendis perferendis, ea nihil cumque, saepe odio labore, corporis pariatur explicabo quaerat accusamus quia?</span>
+                </div>
+            </div>
+        </section>
+        <section class="section-login">
+            <h2 class="section-login__header u-center-text u-margin-bottom-medium">Have an account?</h2>
+            <a href="#" class="section-login__link">Login</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container u-margin-bottom-medium">
+            <div class="footer__social-media">
+                <div class="footer__logo">
+                    <div class="logo-box">
+                        <img class="logo-box__img" src="../img/LOGO.png" alt="Three-amigos-logo">
+                        <h3 class="logo-box__header">Three Amigos</h3>
+                    </div>
+                </div>
+                <h3 class="u-margin-bottom-small">High quality cooking education created by Three Amigosgi and its community</h3>
+                <div class="footer__imgs">
+                    <a href="#"><img src="../svg/index/icons8-github.svg" alt="github"></a>
+                    <a href="#"><img src="../svg/index/icons8-discord-new.svg" alt="discord"></a>
+                    <a href="#"><img src="../svg/index/icons8-facebook.svg" alt="facebook"></a>
+                    <a href="#"><img src="../svg/index/icons8-twitter.svg" alt="twitter"></a>
+                    
+                </div>
+            </div>
+            <div class="footer__start-learning">
+                <h2 class="u-margin-bottom-small">Start your joyrney for free</h2>
+                <form action="#" method="">
+                    <div class="input" id="footer__input">
+                        <input type="email" id="email-footer" name="email-footer" placeholder="Email Address">
+                        <label for="email-footer">
+                            <button class="btn--special">Get started!</button>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer__info">
+            <a class="footer__info__link" href="#">About</a>
+            <a class="footer__info__link" href="#">FAQ</a>
+            <a class="footer__info__link" href="#">Blog</a>
+            <a class="footer__info__link" href="#">Success Stories</a>
+            <a class="footer__info__link" href="#">Contribute</a>
+            <a class="footer__info__link" href="#">Appendix</a>
+            <a class="footer__info__link" href="#">Terms of Use</a>
+        </div>
+    </footer> 
+</body>
+</html>

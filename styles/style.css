@@ -28,8 +28,8 @@
 }
 
 *::selection {
-    background-color: unset;
-    color: unset;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
 }
 
 html {
