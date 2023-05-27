@@ -566,19 +566,26 @@ header {
     overflow: hidden;
 }
 .more__container {
-    
+    display: flex;
+    height: 100%;
+    width: 100%;
 }
 .more__div {
-
+    display: flex;
+    width: 50%;
+    height: 100%;
+    border: 3px solid red;
 }
 .more__heading {
-
+    
 }
 .more__paragraph {
 
 }
 .more__form {
-
+    width: 50%;
+    height: 100%;
+    border: 3px solid blue;
 }
 .more__spiral {
     width: 50%;
