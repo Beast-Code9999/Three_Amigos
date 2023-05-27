@@ -1,7 +1,7 @@
 /* variales */
 :root {
     --color-primary: #fbaf3c;
-    --color-secondary: #001220;
+    --color-secondary: #000;
     --paragraph-small: 1.8rem;
     --paragraph-big: 2.35rem;
     --paragraph-huge: 3.1rem;
@@ -271,12 +271,12 @@ main {
     position: absolute;
 }
 .spacer--one {
-    background-image: url(/svg/index/layered-waves-haikei.svg);
+    background-image: url(/svg/index/spacer-hero.svg);
     height: 20rem;
     top: -30%;
 }
 .spacer--two {
-    background-image: url(/svg/index/layered-waves-haikei-white.svg);
+    background-image: url(/svg/index/spacer-hero-two.svg);
     height: 20rem;
     bottom: 10%;
 }
@@ -375,7 +375,7 @@ main {
 }
 
 .spacer--three {
-    background-image: url(/svg/index/spacer-product-4.svg);
+    background-image: url(/svg/index/spacer-product.svg);
     height: 30rem;
     bottom: 0;
     left: 0;
