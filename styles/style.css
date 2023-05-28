@@ -298,8 +298,11 @@ header {
     font-weight: 400;
     line-height: 1;
     margin-bottom: var(--margin-small);
+    font-size: var(--heading-1);
 }
-
+.product__header p {
+    font-size: var(--paragraph-huge);
+}
 .product__options {
     width: 100%;
     display: flex;
@@ -764,3 +767,35 @@ footer {
     cursor: pointer;
 }
 /* end of footer */
+/* media queries */
+@media (max-width: 106.25rem) {
+    .product {
+        height: 150vh;
+    }
+}
+@media (max-width: 100rem) {
+    :root {
+        --paragraph-small: 1.8rem;
+        --paragraph-big: 2.35rem;
+        --paragraph-huge: 3rem;
+        --heading-1: 6.2rem;
+        --heading-2: 3.5rem;
+        --heading-3: 2.05rem;
+    }
+}
+@media (max-width: 93.75rem) {
+    .product {
+        height: 160vh;
+    }
+}
+@media (max-width: 87.5rem) {
+    .product {
+        height: 170vh;
+    }
+}
+@media (max-width: 81.25rem) {
+    .product {
+        height: 180vh;
+    }
+}
+/* End of media queries */
