@@ -375,7 +375,7 @@ footer {
 .footer {
     background-color: var(--color-secondary);
     color: white;
-    height: 6vh;
+    height: 66vh;
     display: flex;
     flex-direction: column;
     padding: 9rem; 
