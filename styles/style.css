@@ -785,7 +785,10 @@ footer {
 }
 @media (max-width: 93.75rem) {
     .product {
-        height: 160vh;
+        height: 190vh;
+    }
+    .motivation {
+        height: 130vh;
     }
 }
 @media (max-width: 87.5rem) {
