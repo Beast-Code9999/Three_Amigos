@@ -181,6 +181,7 @@ header {
 main {
     width: 100%;
     height: auto;
+    overflow: hidden;
 }
 /* start of section one */
 .section--one {
@@ -287,17 +288,65 @@ main {
 .section--three {
     background-color: var(--color-secondary);
     width: 100%;
-    height: 100vh;
+    height: auto;
+    padding: 20rem;
 }
 .presentation {
-
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    gap: 2rem;
 }
 .presentation__words {
-
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.presentation__words > *:not(:last-child) {
+    margin-bottom: var(--margin-small);
+}
+.presentation__heading {
+    font-size: var(--heading-2);
+}
+.presentation__heading--one span {
+    color: var(--color-primary);
+}
+.presentation__heading--two {
+    color: black;
+}
+.presentation__paragraph {
+    font-size: var(--paragraph-small);
+}
+.presentation__paragraph--two {
+    color: black;
+}
+.presentation__button {
+    margin-top: var(--margin-small);
+}
+.presentation__button button{
+    background-color: var(--color-primary);
+    border: none;
+    padding: 2rem 4rem;
+    font-size: var(--paragraph-small);
+    font-weight: 900;
+    border-radius: 1rem;
+}
+.presentation button:hover {
+    cursor: pointer;
+    filter: brightness(1.05);
 }
 .presentation__illustration {
-    
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.presentation__img {
+    width: 80%;
+}
+
 /* End of section three */
 /* start of section four */
 .section--four {
