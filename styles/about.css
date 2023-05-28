@@ -351,11 +351,17 @@ main {
 /* start of section four */
 .section--four {
     width: 100%;
-    height: 100vh;
+    height: auto;
+    padding: 20rem;
+}
+.presentation__img--two {
+    border-radius: 2rem;
+}
+.presentation__heading--two span {
+    color: var(--color-primary);
+    font-weight: 900;
 }
 /* End of section four */
-
-
 
 
 .more {

@@ -9,3 +9,6 @@ https://pixabay.com/users/pcb-tech-2044000/?utm_source=link-attribution&utm_medi
 
 # sign up photos 
 Photo by cottonbro studio: https://www.pexels.com/photo/person-pouring-seasoning-on-green-beans-on-bowl-3338497/
+
+# About us photos
+Photo by Lara Jameson: https://www.pexels.com/photo/flags-on-paper-map-of-australia-8828416/
