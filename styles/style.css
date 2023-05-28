@@ -793,12 +793,12 @@ footer {
 }
 @media (max-width: 87.5rem) {
     .product {
-        height: 170vh;
+        height: 200vh;
     }
 }
 @media (max-width: 81.25rem) {
     .product {
-        height: 180vh;
+        height: 210vh;
     }
 }
 /* End of media queries */
