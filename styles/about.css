@@ -217,6 +217,7 @@ main {
     justify-content: center;
     align-items: center;
     padding: 16rem 0;
+    position: relative;
 }
 .recipes {
     display: flex;
@@ -226,15 +227,62 @@ main {
 }
 .recipes__heading {
     font-size: var(--heading-2);
+    text-align: center;
+    margin-bottom: var(--margin-large);
 }
 .recipes__container {
-    
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
 }
-.recipes__container > div {
-    width: 50%;
-    height: 30rem;
+.cards {
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+.card {
+    width: auto;
+    height: auto;
     background-color: black;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 1rem 1rem var(--color-primary);
+    transition: transform 1s, box-shadow 1s;
 }
+.card:hover {
+    transform: translate(-1rem, -1rem);
+    box-shadow: 2rem 2rem var(--color-primary);
+    cursor: pointer;
+}
+.card__img {
+    width: 60rem;
+    height: 35rem;
+    background-color: lightcoral;
+}
+.card__paragraph {
+    font-size: var(--paragraph-big);
+    font-weight: 900;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+.section__spiral {
+    filter: invert(86%) sepia(0%) saturate(265%) hue-rotate(224deg) brightness(105%) contrast(93%);
+    width: 150rem;
+    position: absolute;
+    z-index: -10;
+}
+.section__spiral--one {
+    left: -50%;
+    bottom: -40%;
+}
+.section__spiral--two {
+    right: -60%;
+    top: -30%;
+}
+
 /* end of section two */
 /* start of section three */
 .section--three {
